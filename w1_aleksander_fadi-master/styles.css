@@ -1,0 +1,466 @@
+body {
+    font-family: arial;
+    background-color: #F9F0E1;
+    margin: 0px;
+}
+
+div.ajaxContent {
+    width: 470px;
+    margin: 0;
+}
+
+img.BottomPart {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img.JustColor {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 50px;
+    z-index: -1;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: arial;
+    margin-top: 20px;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #34495E;
+}
+
+img.logo {
+    background-color: #F9F0E1;
+    float: left;
+    padding-right: 10px;
+}
+
+li.aboutus {
+    float: right;
+}
+
+li.logout {
+    float: right;
+    text-decoration: underline;
+}
+
+li.logout a:hover {
+    background-color: #FF0000;
+}
+
+img.main_image {
+    width: 800px;
+    position: absolute;
+    left: 700px;
+}
+
+div.paragraph {
+    height: 320PX;
+    width: 470px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    font-size: 30px;
+}
+
+div.banner {
+    background-color: #1BBC9B;
+}
+
+button.aboutus {
+    background-color: #34495E;
+    border: none;
+    position: absolute;
+    left: 1000px color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font: Arial;
+}
+
+div.aboutus {
+    margin-top: 200px;
+    margin-left: 120px;
+    font-size: 20px;
+    font-family: Arial;
+    color: #34495E;
+}
+
+a.aboutUsContract {
+    font-size: 20px;
+    font-family: Arial;
+    color: #34495E;
+}
+
+button.registerButton {
+    background-color: #34495E;
+    border: none;
+    position: absolute;
+    left: 200px;
+    top: 500px;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font: Arial;
+}
+
+button.loginButton {
+    background-color: #16A086;
+    border: none;
+    position: absolute;
+    left: 400px;
+    TOP: 500px;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font: Arial;
+}
+
+button.calednric {
+    background-color: #34495E;
+    border: none;
+    position: absolute;
+    left: 400px;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font: Arial;
+}
+
+button.history {
+    background-color: #34495E;
+    border: none;
+    position: absolute;
+    left: 680px;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font: Arial;
+}
+
+button.details {
+    background-color: #34495E;
+    border: none;
+    position: absolute;
+    left: 920px;
+    color: white;
+    padding: 8px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font: Arial;
+}
+
+
+/* Register and login fields */
+
+div.register {
+    font-family: 'Arial';
+    width: 600px;
+    margin-top: 10;
+    margin-left: 70px;
+    display: block;
+    padding: 10px 50px 50px;
+}
+
+div.login {
+    font-family: 'Arial';
+    width: 600px;
+    margin-top: 120px;
+    margin-left: 100px;
+    display: block;
+    padding: 10px 50px 50px;
+}
+
+div.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    background-color: #F9F0E1;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #16A086;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 410px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #16A086;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.error {
+    color: #16A086;
+}
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+.help-block {
+    color: red;
+    position: relative;
+    display: block;
+    width: 410px;
+}
+
+button.ShowPassCheckbox {
+    position: absolute;
+    right: 190px;
+    top: 4px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    background: transparent url("eyeClosed.png") no-repeat;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+
+.ShowPassCheckbox:active {
+    background: transparent url("eyeOpen.png") no-repeat;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+
+
+/* Calendar CSS */
+
+div.calendar {
+    position: relative;
+    float: right;
+    width: 40%;
+    margin-right: 5%;
+}
+
+
+/***********Check History **************/
+
+div.scrollmenu {
+    background-color: #16A086;
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: 110px;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #34495E;
+}
+
+div.Overview {
+    position: absolute;
+    margin-left: 400px;
+    text-align: center;
+    float: none;
+    text-decoration: underline;
+    color: #16A086;
+}
+
+div.overviewItems {
+    float: left;
+    padding-right: 20px;
+}
+
+div.overviewComment {
+    float: left;
+    padding-right: 20px;
+    color: gray;
+}
+
+div.overviewMoney {
+    float: left;
+    color: black;
+}
+
+
+/************Change Details ***********/
+
+.row h1 {
+    text-align: center;
+    color: #16A086;
+}
+
+.row {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.currentInfo {
+    margin-top: 20px;
+}
+
+div.currentDetails {
+    margin-left: 130px;
+    padding-right: 15px;
+    float: left;
+    color: #16A086;
+    font-size: 20px;
+    text-align: right;
+}
+
+.currentDetails p {
+    padding-bottom: 35px;
+}
+
+div.currentDetailsInfo {
+    float: left;
+    font-size: 20px;
+    padding-right: 10px;
+    color: #999;
+}
+
+.currentDetailsInfo p {
+    padding-bottom: 35px;
+}
+
+div.currentDetailsInput {
+    float: left;
+    margin-top: 12px;
+    margin-left: 30px;
+}
+
+button.SaveDetails {
+    background-color: #16A086;
+    border: none;
+    position: absolute;
+    TOP: 500px;
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font: Arial;
+    margin-top: 85px;
+    margin-bottom: 80px;
+    margin-left: -268px;
+}
+
+
+/********Main Page*********/
+
+div.mainPage {
+    margin-left: 200px;
+    ;
+}
+
+div.titleDIV {
+    color: #16A086;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    padding-left: 110px;
+}
+
+div.commDIV {
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+    padding-left: 40px;
+}
+
+div.valueDIV {
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding-left: 40px;
+}

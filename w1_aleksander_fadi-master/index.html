@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My first webpage in this course </title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Showing the register fileds or login fields , and animate them -->
+
+
+
+    <!-- this image is for the header -->
+    <img class="JustColor" src="JustColor.PNG">
+</head>
+
+<body>
+    <div class="navigation mb-50px">
+        <ul>
+            <img class="logo" src="logo.png" alt="HUH" height="100px">
+            <li><a href="main_page.php">Home</a></li>
+            <li class="aboutus"><a href="about_us_and_contact.html">About</a></li>
+
+        </ul>
+    </div>
+    <!-- <a href="Contract_Aleksander_Fadi.pdf" >
+     Please downlaod the Contract_Aleksander_Fadi pdf file </a> */
+-->
+    <img class="main_image" src="main_image.png" alt="HUH" width="800" />
+
+    <!-- The divider in which the login or register fields will appear. -->
+    <div id="ajaxContent" class="ajaxContent" style="display:none">
+    </div>
+
+    <!--The paragraph with the Introduction -->
+    <div id="ajax_hide_content" class="paragraph">
+        <h2> Welcome </h2>
+        <p> Add, track, edit, see, delete all of your bills. See and track monthly expenses. Preview your bill history monthly or yearly. All in one place. Register now free of charge.
+        </p>
+    </div>
+
+    <div class="Main">
+        <!-- Login and Register Buttons -->
+
+        <button id="AAregisterButton" class="registerButton" onClick="location.href='BetaRegister.php'" value='click here'> Register </button>
+
+        <button id="AAloginButton" class="loginButton" onClick="location.href='login.php'" value='click here'> Log In </button>
+    </div>
+<img src="BottomPart.png" alt="huh!" class="BottomPart">
+</body>
+
+</html>
